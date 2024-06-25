@@ -27,7 +27,7 @@ public class ClientController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult> AddClientWithRental([FromBody] ClientRentalDto dto)
+    public async Task<ActionResult> AddClientWithRental(ClientRentalDto dto)
     {
         var client = new Clients
         {
